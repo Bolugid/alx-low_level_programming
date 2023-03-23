@@ -31,13 +31,14 @@ int main(void)
 		h2 %= 10000000000;
 	}
 	printf("%lu%lu", h1, h2);
-	if (c != 98)
-		printf(", ");
-		ff1 = fff1;
-		ff2 = fff2;
-		fff1 = h1;
-		fff2 = h2;
-	}
+		if (c != 98)
+		{
+			printf(", ");
+			ff1 = fff1;
+			ff2 = fff2;
+			fff1 = h1;
+			fff2 = h2;
+		}
 	printf("\n");
 	return (0);
 }
