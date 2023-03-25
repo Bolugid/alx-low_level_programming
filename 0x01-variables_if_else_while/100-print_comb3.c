@@ -1,6 +1,6 @@
 #include <stdio.h>
-/*
- * main - Prints all possible combinations of two different digits,
+/**
+ * main - Prints all possible combinations of two different digits
  * Description: 'print diff combination with putchar'
  * Return: always 0
  */
