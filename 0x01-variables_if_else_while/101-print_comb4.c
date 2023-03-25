@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  * Description: 'print all possible combination'
@@ -10,20 +12,22 @@ int main(void)
 	int m;
 	int c;
 
-	for (n = 0; n <= 8; n++)
+	for (n = 0; n <= 9; n++)
 	{
 		for (m = n + 1; m <= 9; m++)
 		{
-			for (c = m + 1; c <= 10; c++)
+			for (c = m + 1; c <= 9; c++)
 			{
-				putchar((n % 10) + '0');
-				putchar((m % 10) + '0');
-				putchar((c % 10) + '0');
-
-				if (n == 7 && m == 8 && c == 9)
+			if ((m != n) != c)
+				{
+					putchar(n);
+					putchar(m);
+					putchar(c);
+					if (n == 7 && m == 80)
 					continue;
-				putchar(',');
-				putchar(' ');
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
