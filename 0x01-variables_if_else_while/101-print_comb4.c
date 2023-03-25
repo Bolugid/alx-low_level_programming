@@ -8,22 +8,20 @@
  */
 int main(void)
 {
-	int n;
-	int m;
-	int c;
+	int d, p, q;
 
-	for (n = 0; n <= 9; n++)
+	for (d ='0'; d < '9'; d++)
 	{
-		for (m = n + 1; m <= 9; m++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			for (c = m + 1; c <= 9; c++)
+			for (q = p + 1; q <= '9'; q++)
 			{
-			if ((m != n) != c)
+				if (((p != d) != q)
 				{
-					putchar(n);
-					putchar(m);
-					putchar(c);
-					if (n == 7 && m == 80)
+					putchar(d);
+					putchar(p);
+					putchar(q);
+					if (d == '7' && p == '8')
 					continue;
 					putchar(',');
 					putchar(' ');
