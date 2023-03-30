@@ -6,7 +6,6 @@
  *@c: integer entered
  *Return: (1) for uppercase and (0) of otherwise
  */
-
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
