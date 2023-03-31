@@ -6,7 +6,7 @@
 void print_triangle(int size)
 {
 	int a, b, c, d;
-	
+
 	for (a = 1; a <= size; a++)
 	{
 		c = size - a;
